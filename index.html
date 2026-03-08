@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CRM Ferias de Arte</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>CRM Ferias de Arte - Seguimiento</h2>
+
+<div class="top-controls">
+  <input type="text" id="search" placeholder="Buscar galería o feria">
+  <button onclick="addRow()">Añadir fila</button>
+  <button onclick="resetSemaforos()">Resetear semáforos</button>
+  <button onclick="importJSON()">Importar JSON</button>
+  <button onclick="exportJSON()">Exportar JSON</button>
+  <button onclick="prevYear()">⬅️ Año anterior</button>
+  <span id="currentYear">2026</span>
+  <button onclick="nextYear()">Año siguiente ➡️</button>
+</div>
+
+<table id="crmTable">
+  <thead>
+    <tr>
+      <th>Galería / Feria</th>
+      <th>Fecha Convocatoria</th>
+      <th>Email Enviado</th>
+      <th>Comentario</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<input type="file" id="fileInput" style="display:none;" accept=".json">
+
+<script src="script.js"></script>
+</body>
+</html>

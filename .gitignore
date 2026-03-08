@@ -1,0 +1,10 @@
+# Ignorar archivos JSON con datos sensibles
+*.json
+
+# Ignorar archivos temporales de sistema
+*.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de entorno local si las hay
+node_modules/
+dist/
